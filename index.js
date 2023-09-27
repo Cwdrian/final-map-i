@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     "?ll=" + userLat + "," + userLng +
                     "&radius=1000" +  // You can adjust the radius as needed
                     "&client_id=" + apiKey1 +
-                    "&client_secret=" + apiKey2 +
+                    "&client_secret=" + apiKey1 +  // Use the same API key for client secret
                     "&v=20230901";  // Use the current date as the version
 
                 // Fetch and process nearby venues
@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Call the function to get the user's location and set the map view
     getUserLocation();
 });
+
 
 
 
